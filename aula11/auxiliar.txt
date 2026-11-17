@@ -1,0 +1,22 @@
+def reproduzir(self):
+        if self.tocando == False:
+            self.tocando = True
+            self.reproducoes += 1
+            print(f"A música {self._nome} está sendo reproduzida")
+        else:
+            print(f"A música {self._nome} já está sendo reproduzida")
+
+    def pausar(self):
+        if self.tocando == True:
+            self.tocando = False
+            print(f"A música {self._nome} foi pausada")
+        else:
+            print(f"A música {self._nome} não está sendo reproduzida")
+    def favoritar(self):
+            if self.favorito == False:
+                self.favorito = True
+                print(f"A música {self._nome} foi adicionada aos favoritos")
+    def desfavoritar(self):
+            if self.favorito == True:
+                self.favorito = False
+                print(f"A música {self._nome} foi removida dos favoritos")
